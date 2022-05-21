@@ -1,0 +1,368 @@
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 0;
+    padding: 0 10%;
+  }
+
+  .navbar .logo {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-menu .list-item {
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .nav-list .list-item > a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .headline {
+    min-height: 110vh;
+    background-image: url("images/desktop-background.svg");
+    background-size: contain;
+    height: 100vh;
+  }
+
+  .headline > h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    margin: 10% 15% 0 15%;
+  }
+
+  .headline > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 15% 2% 15%;
+  }
+
+  .headline > h3 {
+    margin: 2% 15% 0 15%;
+  }
+
+  .headline .contact {
+    margin: 1% 15% 0 15%;
+  }
+
+  .works-section {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .works-section .project:nth-child(odd) {
+    display: flex;
+    border-radius: 24px;
+    height: 33.5rem;
+    padding: 20px;
+    margin-top: 5%;
+  }
+
+  .works-section .project:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 24px;
+    height: 33.5rem;
+    padding: 20px;
+    margin-top: 5%;
+  }
+
+  .row-direction > img {
+    order: 1;
+  }
+
+  .works-section .project .project-img {
+    flex: 30%;
+    width: 50%;
+    min-width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .works-section .project .work-details {
+    flex: 30%;
+    width: 50%;
+    margin: 0 0 0 3%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works-section .project h3 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 10% 0 2% 0;
+  }
+
+  .works-section .project .canopy {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .works-section .project .canopy > img {
+    padding: 25px 10px;
+    justify-content: baseline;
+    width: 10px;
+    height: 10px;
+  }
+
+  .works-section .project .canopy .title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .works-section .project .canopy .job,
+  .date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .works-section .project .project-description {
+    font-size: 16px;
+    margin: 3% 11% 0 0;
+  }
+
+  .works-section .project .project-tech {
+    margin-bottom: 3%;
+    margin-left: 0;
+  }
+
+  .works-section .project .project-details {
+    transition-duration: 100ms;
+    transition-property: background;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .works-section .project .project-details:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .modal {
+    min-width: 51%;
+    padding: 20px;
+    max-height: 99%;
+    overflow-y: auto;
+  }
+
+  .modal-header {
+    margin-bottom: 0;
+  }
+
+  .modal-header .modal-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 10px;
+  }
+
+  .modal #project-desc {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-body #experience {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+  }
+
+  .modal-body #experience .type {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7a869a;
+  }
+
+  .modal-body .modal-img {
+    margin-top: 30px;
+    min-width: 100%;
+  }
+
+  .modal-body #project-desc {
+    margin-top: 3%;
+  }
+
+  .modal-body #project-desc > p {
+    font-size: 16px;
+    width: 65%;
+    margin-right: 5%;
+  }
+
+  .modal-body #project-buttons {
+    margin-top: 5%;
+  }
+
+  .modal-body #project-buttons .link {
+    margin-top: 5%;
+    padding: 10px 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+
+  .modal-body #technologies .tech-type {
+    margin-bottom: 3%;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    margin: 8% 0;
+    padding: 0;
+  }
+
+  .about h2 {
+    padding-top: 0;
+  }
+
+  .about .about-myself {
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+  .about .about-myself #h3,
+  .about .about-myself .contact {
+    margin-top: 5%;
+  }
+
+  .about .about-myself .about-details {
+    justify-content: center;
+    max-width: 200px;
+    margin-top: 5%;
+    transition-duration: 1000ms;
+    transition-property: background;
+  }
+
+  .about .about-myself .about-details:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .about .about-skills {
+    max-width: 100%;
+    margin-top: 5%;
+    width: 40%;
+  }
+
+  .about .about-skills #skill1 > ul {
+    flex-direction: row;
+  }
+
+  .about .about-skills #skill1 > ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 2% 0 0;
+    width: 18%;
+    padding: 0 0 10px 5px;
+  }
+
+  #selected,
+  #skill2-img,
+  #skill3-img {
+    float: right;
+    padding-right: 7%;
+  }
+
+  footer {
+    background-image: url("images/desktop-contact-form-background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 30%;
+    margin: 0 35%;
+  }
+
+  .contact-form #contact-me {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-form #contact-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contact-form #form-data {
+    margin-left: 0;
+  }
+
+  .contact-form input,
+  textarea {
+    width: 90%;
+    margin-top: 2%;
+    border-radius: 0;
+  }
+
+  footer .footer-line {
+    display: none;
+  }
+}
